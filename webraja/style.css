@@ -1,20 +1,51 @@
-@import url(https:fonts.googleapis.com/css2?family=poppins:wght@400;600;900&dispaly=swap);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
-}
-body{
-    overflow: hidden;
-}
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background-color: aliceblue;
-}
-nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;800;900&display=swap');
+
+
+:root{
+    --display: #f7f7f7;
+    --light: #fff;
+    --dark: #000;
+    --danger: #ff7300;
+    --primary: #2D31FA;
+    --second: #051367;
+    --second-light: #00073a;
+    --third: #5D8BF4;
+    --true: #52e5ff;
+  }
+  
+  body{
+    font-family: 'League Spartan';
+    background: var(--display) ;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  html::-webkit-scrollbar {
+    width: 8px;
+  }
+  html::-webkit-scrollbar-track {
+    background: var(--true);
+  }
+  html::-webkit-scrollbar-thumb {
+    background: var(--danger);
+  }
+  
+.error{
+    margin-top: 120px; 
+    text-align: center;
+    background: var(--display);
+  }
+  .error .text p{
+    font-size: 30px;
+  }
+  .error .text a{
+    padding: 5px 10px;
+    color: var(--primary);
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .error .text .btn a:hover{
+    color: var(--light);
+  }
